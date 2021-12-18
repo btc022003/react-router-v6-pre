@@ -16,7 +16,7 @@ function User() {
       <Routes>
         <Route path='' element={<Info />}></Route>
         <Route path='scores' element={<Scores />}></Route>
-        <Route path='orders' element={<Orders />}></Route>
+        <Route path='orders/*' element={<Orders />}></Route>
         {/* 嵌套路由的时候，实现跳转到404页面 */}
         <Route path='*' element={<Navigate to='/404' />} />
       </Routes>
